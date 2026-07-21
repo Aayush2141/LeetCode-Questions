@@ -1,0 +1,25 @@
+# Last updated: 22/07/2026, 04:24:37
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        maxval=0
+        def rec(root):
+            nonlocal maxval
+            if not root:
+                return 0
+            
+            left=rec(root.left)
+            right=rec(root.right)
+
+            maxval=max(maxval,left+right)
+            return 1+max(left,right)
+
+        rec(root)
+        return maxval
+
+        
