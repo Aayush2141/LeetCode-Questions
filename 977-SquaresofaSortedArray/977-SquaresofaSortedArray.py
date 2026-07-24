@@ -1,4 +1,4 @@
-# Last updated: 23/07/2026, 02:25:43
+# Last updated: 24/07/2026, 23:05:54
 1class Solution:
 2    def sortedSquares(self, nums: List[int]) -> List[int]:
 3        narr=[]
