@@ -1,4 +1,4 @@
-# Last updated: 27/10/2026, 16:35:48
+# Last updated: 27/10/2026, 16:36:06
 1class Solution:
 2    def combine(self, n: int, k: int) -> list[list[int]]:
 3        visited=[False]*(n+1)
